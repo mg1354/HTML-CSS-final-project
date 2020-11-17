@@ -1,0 +1,184 @@
+*{
+	box-sizing: border-box;
+}
+body{
+
+	background-color:#000000;
+    
+}
+
+header{
+	width: 100%;
+	height: 200px;
+	background-color: yellow;
+	border: 2px solid red;
+	border-radius: 15px;
+	padding: 0px;
+    margin-bottom: 5px;
+}
+
+.image-siz6{
+	border-radius: 15px;
+	width: 100%;
+	height: 190px;
+	padding: 0px;
+	
+}
+nav  {
+	padding: 5px 10px;
+
+}
+
+nav  a {
+	border-radius: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;  
+	background: #66ccff;
+	
+}
+nav  a:visited {
+  background-color: #9933ff;
+  color: white;
+} 
+
+nav  a:hover {
+  border: 2px solid black;
+  background-color: #ccffff;
+  color: black;
+} 
+
+nav  a:active {
+  background-color: #0033cc;
+  color: white;
+} 
+
+.image-siz1{
+  	width: 4%;
+  	height:4%;
+  	vertical-align: middle;
+  	margin-left: 10px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 15px;
+  background-color:#ccffe6;
+  padding: 5px;
+}
+
+.flex-container2 {
+	flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+	border-radius: 15px;
+	background-color:   #b3ff1a;
+	padding: 5px;
+	font-size: 20px;
+	box-sizing: border-box;
+
+}
+
+.flex-container3{
+	flex-basis: 78%;
+	border: 2px solid red;
+	border-radius: 15px;
+	background-color:   #e6ffff;
+	padding: 10px;
+	font-size: 20px;
+	color:#000099;
+	text-align: left;
+    box-sizing: border-box;
+  
+}
+
+footer {
+	width: 100%;
+	border:2px solid red;
+	border-radius: 15px;
+	color: white;
+	background-color: #005ce6;
+	padding-bottom: 15px;
+	padding-top: 0px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 5px;
+} 
+.h1{
+	position: relative;
+	width: 250px;
+	height: 150px;
+	color: white;
+	background-color:red;
+	font-size: 50px;
+	font-style: italic;
+	border-radius: 30px;
+	padding: 15px;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+} 
+
+@keyframes animation {
+	 0%  { background: red; }
+     25% { background: yellow;color: blue;}
+     50% { background: red; color: white; }
+     75% { background: yellow;color: blue;}
+     100% { background: red; }
+
+}
+
+.p1{
+	padding:  5px 5PX;
+	margin: 0px;
+	color: red;
+	font-size: 50px;
+	background-color: #3399ff;
+	border-radius: 15px;
+}
+
+.a{
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding:5px;  
+	background: white; 
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .flex-container1{
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+  }
+  
+  .flex-container2{
+	position: static;
+	flex-basis: 100%;
+	align-items: center;
+	margin: 5PX;
+
+  }
+  .flex-container3{
+	 flex-basis: 100%;
+  }
+
+  
+ footer {
+	width: 100%;
+	margin: auto;
+  }
+}

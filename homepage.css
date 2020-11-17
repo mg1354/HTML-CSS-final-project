@@ -1,0 +1,252 @@
+*{
+	box-sizing: border-box;
+}
+body{
+
+	background-color:#000000;
+    
+}
+
+nav {
+	margin: 0px;
+	border-radius: 15px;
+	background-image: url("Iranian-restaurant1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	box-sizing: border-box;
+
+}
+
+nav ul{
+	padding: 150px ;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+nav ul li {
+	padding: 5px 10px;
+
+}
+
+nav ul li a {
+	border-radius: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;  
+	background: #66ccff;
+	
+}
+nav ul li a:visited {
+  background-color: #9933ff;
+  color: white;
+} 
+
+nav ul li a:hover {
+  border: 2px solid black;
+  background-color: #ccffff;
+  color: black;
+} 
+
+nav ul li a:active {
+  background-color: #0033cc;
+  color: white;
+} 
+
+.image-siz1{
+  	width: 4%;
+  	height:4%;
+  	vertical-align: middle;
+  	margin-left: 10px;
+}
+  
+.image-siz2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+   	width: 40%;
+  	height:200px;
+  	border-radius: 10px;
+}
+.image-siz3{
+   	width: 100%;
+  	height:225px;
+  	border-radius: 10px;
+}
+.image-siz4{
+   	width: 100%;
+  	height:150px;
+  	border-radius: 15px 0px 0px 15px;
+  	padding: 0px;
+  	vertical-align: middle;
+}
+.image-siz5{
+    margin-left: 50px;
+	width: 40%;
+  	height:200px;
+  	border-radius: 10px;
+}
+
+.section>p {
+padding: 0px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  background-color:#ccffe6;
+  padding: 5px;
+}
+
+.flex-container2 {
+	flex: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+	border-radius: 15px;
+	background-color:   #b3ff1a;
+	padding: 5px;
+	font-size: 20px;
+	box-sizing: border-box;
+
+}
+.flex-container3{
+	
+    flex: 74%;
+    flex-direction: column;
+	border: 2px solid red;
+	border-radius: 15px;
+	background-color:   #e6ffff;
+	padding: 0px;
+	font-size: 30px;
+	text-align: center;
+    box-sizing: border-box;
+  
+}
+
+footer {
+	width: 100%;
+	border:2px solid red;
+	border-radius: 15px;
+	color: white;
+	background-color: #005ce6;
+	padding-bottom: 15px;
+	padding-top: 0px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 5px;
+} 
+.h1{
+	position: relative;
+	width: 250px;
+	color: white;
+	background-color:red;
+	font-size: 50px;
+	font-style: italic;
+	border-radius: 30px;
+	padding: 15px;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+} 
+
+@keyframes animation {
+	
+	 0%  {left: 0%;top: 20PX; background: red; }
+     25% {top: -30PX; background: yellow;color: blue;}
+     50% {top: 20PX; background: red; }
+     75% {top: -30PX; background: yellow;color: blue;}
+     100% {left: 75%;top: 20PX; background: red; }
+
+}
+
+.p1{
+	padding:  5px 5PX;
+	margin: 0px;
+	color: red;
+	font-size: 50px;
+	background-color: #3399ff;
+	border-radius: 15px;
+}
+.a{
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding:5px;  
+	background: white; 
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+  nav {
+    background-image: url("Iranian restaurant.jpg");
+    
+  }
+
+  nav ul {
+  	padding: 150px ;
+  }
+  
+  .flex-container1{
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+	align-items: center;
+	justify-content: space-around;
+  }
+  
+  .flex-container2{
+	position: static;
+	flex-basis: 100%;
+	align-items: center;
+	margin-bottom: 5PX;
+
+  }
+  .image-siz3{
+   	width: 70%;
+  	height:200px;
+  }
+
+  .flex-container3{
+	 flex-basis: 100%;
+
+  }
+
+
+  @keyframes animation {
+	 0%  {top: 20PX; background: red; }
+     25% {top: -30PX; background: yellow;color: blue;}
+     50% {top: 20PX; background: red; }
+     75% {top: -30PX; background: yellow;color: blue;}
+     100% {top: 20PX; background: red; }
+
+  }
+  .h1 {
+	margin: auto;
+  }
+
+  .image-siz2{
+	
+   	width: 80%;
+  	height:200px;
+  }
+
+  .image-siz5{
+    margin-left: 30px;
+	width: 50%;
+  	height:200px;
+  	border-radius: 10px;
+  }  
+
+  footer {
+	width: 100%;
+	margin: auto;
+  }
+}
